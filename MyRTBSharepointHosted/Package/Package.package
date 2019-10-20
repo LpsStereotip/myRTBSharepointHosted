@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="5c18af1c-9551-4b78-a864-122ff535c100" 
+        solutionId="5c18af1c-9551-4b78-a864-122ff535c100" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="MyRTBSharepointHosted"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="2a639aba-2ea1-488b-8a22-f01578efab2b" />
+  </features>
+</package>

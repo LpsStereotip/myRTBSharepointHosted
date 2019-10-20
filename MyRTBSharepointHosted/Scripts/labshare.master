@@ -1,0 +1,92 @@
+﻿<%@Master language="C#"%>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/15/Welcome.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<SharePoint:SPHtmlTag dir="<%$Resources:wss,multipages_direction_dir_value%>" ID="SPHtmlTag" runat="server" >
+
+<head runat="server">
+<meta name="GENERATOR" content="Microsoft SharePoint" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=11" />
+<meta http-equiv="Expires" content="0" />
+<meta name="viewport" content="width=device-width, user-scalable=no"/>
+
+<SharePoint:RobotsMetaTag runat="server" />
+
+<SharePoint:PageTitle runat="server">
+		<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
+			<SharePoint:ProjectProperty Property="Title" runat="server" />
+		</asp:ContentPlaceHolder>
+	</SharePoint:PageTitle>
+
+<SharePoint:StartScript runat="server" />
+<SharePoint:CssLink runat="server" Version="15" />
+<SharePoint:CacheManifestLink runat="server" />
+<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false" />
+<SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false" />
+<SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false" />
+<SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false" />
+<SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false" />
+<SharePoint:CustomJSUrl runat="server" />
+<SharePoint:SoapDiscoveryLink runat="server" />
+<SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
+		<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server" />
+		<SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true" />
+		<asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" Visible="true" runat="server" />
+	</SharePoint:AjaxDelta>
+<SharePoint:CssRegistration Name="Themable/corev15.css" runat="server" />
+
+       <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-62598952-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+</head>
+
+<body>
+<SharePoint:SharePointForm runat="server" onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return false;} else {return true;}">
+	<script type="text/javascript"> var submitHook = function () { return false; }; theForm._spOldSubmit = theForm.submit; theForm.submit = function () { if (!submitHook()) { this._spOldSubmit(); } }; </script>
+	<asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+
+
+		<div id="contentRow" style="padding : 0px 0px 0px 0px;">
+
+<div id="contentBox" style="margin-left: 0px; margin-right: 0px;"
+ aria-live="polite" aria-relevant="all">
+  <div id="notificationArea" class="ms-notif-box"></div>
+	<SharePoint:AjaxDelta id="DeltaPageStatusBar" BlockElement="true" runat="server">
+		<div id="pageStatusBar"></div>
+	</SharePoint:AjaxDelta>
+	<SharePoint:AjaxDelta id="DeltaPlaceHolderMain" BlockElement="true" IsMainContent="true" runat="server">
+		<a id="mainContent" name="mainContent" tabindex="-1"></a>
+		<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" />
+	</SharePoint:AjaxDelta>
+</div>
+<SharePoint:AjaxDelta id="DeltaFormDigest" BlockElement="true" runat="server">
+	<asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server">
+		<SharePoint:FormDigest runat="server"/>
+	</asp:ContentPlaceHolder>
+</SharePoint:AjaxDelta>
+
+		</div>
+		</div>
+
+		</div>
+</SharePoint:SharePointForm>
+</body>
+</SharePoint:SPHtmlTag>

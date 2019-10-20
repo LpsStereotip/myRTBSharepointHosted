@@ -1,0 +1,5 @@
+C:\Local\MyRTBSharepointHosted\MyRTBSharepointHosted\bin\Debug\MyRTBSharepointHosted.pdb
+C:\Local\MyRTBSharepointHosted\MyRTBSharepointHosted\obj\Debug\MyRTBSharepointHosted.csprojAssemblyReference.cache
+C:\Local\MyRTBSharepointHosted\MyRTBSharepointHosted\obj\Debug\MyRTBSharepointHosted.csproj.CoreCompileInputs.cache
+C:\Local\MyRTBSharepointHosted\MyRTBSharepointHosted\obj\Debug\MyRTBSharepointHosted.dll
+C:\Local\MyRTBSharepointHosted\MyRTBSharepointHosted\obj\Debug\MyRTBSharepointHosted.pdb

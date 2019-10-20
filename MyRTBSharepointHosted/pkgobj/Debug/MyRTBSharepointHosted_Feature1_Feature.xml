@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint Add-in Feature" Id="2a639aba-2ea1-488b-8a22-f01578efab2b" Scope="Web" Title="MyRTBSharepointHosted Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\app.conf" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\0a6c190e7a9f158cee95e1c98b4c6c3e.eot" />
+    <ElementFile Location="Scripts\1745be6292fc05aa01bea48fbdbd2cb4.png" />
+    <ElementFile Location="Scripts\448c34a56d699c29117adc64c43affeb.woff2" />
+    <ElementFile Location="Scripts\5c855afc9bb5cb959e4a9fea48c40c49.ttf" />
+    <ElementFile Location="Scripts\674f50d287a8c48dc19ba404d20fe713.eot" />
+    <ElementFile Location="Scripts\89889688147bd7575d6327160d64e760.svg" />
+    <ElementFile Location="Scripts\8e7baace3c3e7575c8f1e0fca9aa9a9d.svg" />
+    <ElementFile Location="Scripts\912ec66d7572ff821749319396470bde.svg" />
+    <ElementFile Location="Scripts\98c2ebf8b6c8fe3f23a08bb14b0537e4.png" />
+    <ElementFile Location="Scripts\af7ae505a9eed503f8b8e6982036873e.woff2" />
+    <ElementFile Location="Scripts\app.conf" />
+    <ElementFile Location="Scripts\b06871f281fee6b241d60582ae9369b9.ttf" />
+    <ElementFile Location="Scripts\bundle.5c0e92080d4eac257d3e.css" />
+    <ElementFile Location="Scripts\bundle.5c0e92080d4eac257d3e.css.map" />
+    <ElementFile Location="Scripts\bundle.675e1737c6e03ec9f24c.js" />
+    <ElementFile Location="Scripts\bundle.675e1737c6e03ec9f24c.js.map" />
+    <ElementFile Location="Scripts\d7f99950394a2761ab0a4edaca6d1e22.png" />
+    <ElementFile Location="Scripts\default.aspx" />
+    <ElementFile Location="Scripts\e18bbf611f2a2e43afc071aa2f4e1512.ttf" />
+    <ElementFile Location="Scripts\f4769f9bdb7466be65088239c12046d1.eot" />
+    <ElementFile Location="Scripts\f721466883998665b87923b92dea655b.svg" />
+    <ElementFile Location="Scripts\fa2772327f55d8198301fdb8bcfc8158.woff" />
+    <ElementFile Location="Scripts\fee66e712a8a08eef5805a46892932ad.woff" />
+    <ElementFile Location="Scripts\index.html" />
+    <ElementFile Location="Scripts\labshare-shell.master" />
+    <ElementFile Location="Scripts\labshare.master" />
+    <ElementFile Location="Scripts\polyfills.f7972477d7dad121eb34.js" />
+    <ElementFile Location="Scripts\polyfills.f7972477d7dad121eb34.js.map" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>
